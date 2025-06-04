@@ -21,23 +21,3 @@ export async function getImagesByQuery(query, page) {
     throw error;
   }
 }
-
-// export function getImagesByQuery(query) {
-//   return axios
-//     .get('https://pixabay.com/api/', {
-//       params: {
-//         key: API_KEY,
-//         q: query,
-//         image_type: 'photo',
-//         orientation: 'horizontal',
-//         safesearch: true,
-//       },
-//     })
-//     .then(response => {
-//       return response.data;
-//     })
-//     .catch(error => {
-//       console.log('Помилка при запиті:', error);
-//       throw error;
-//     });
-// }
